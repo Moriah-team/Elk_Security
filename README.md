@@ -149,7 +149,7 @@ Download and launch a docker
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-
+![image](https://user-images.githubusercontent.com/74089519/98962439-80018680-24bb-11eb-8f98-1faf1848bce8.png)
 
 Target Machines & Beats
      This ELK server is configured to monitor the following machines:
@@ -178,12 +178,12 @@ SSH into the control node and follow the steps below:
 
 Specific commands the user will need to run to download the playbook
 
-nano ansible.cfg
-add the machine, its IP, and ansible_python_interpreter=/usr/bin/python3 to the hosts
-Ctrl + x to exit file
-in the folder that install-elk.yml is in, run: cp install-elk.yml /etc/ansible
-nano install-elk.yml /etc/ansible
-name: installing elk hosts: [your_machine]
-Ctrl + x to exit file
-ansible-playbook install-elk.yml
+-ano ansible.cfg
+-add the machine, its IP, and ansible_python_interpreter=/usr/bin/python3 to the hosts
+-Ctrl + x to exit file
+-in the folder that install-elk.yml is in, run: cp install-elk.yml /etc/ansible
+-nano install-elk.yml /etc/ansible
+-name: installing elk hosts: [your_machine]
+-Ctrl + x to exit file
+-ansible-playbook install-elk.yml
  

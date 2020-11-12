@@ -6,7 +6,9 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 elk-playbook.yml
-Ansible/elk-playbook.yml
+
+https://github.com/Moriah-team/Elk_Security/commit/ed6cbc5fa51fad7b5dfd18266062ca9a28304f57
+
 This document contains the following details:
  Description of the Topology
  Access Policies
@@ -117,7 +119,7 @@ Target Machines & Beats
        | Web-3 	    |   	| 10.0.0.7   	|
 
 We have installed the following Beats on these machines:
- Microbeats
+- Microbeats
 
 These Beats allow us to collect the following information from each machine:
 Filebeat - collects data about the file system such as log events, and ships them to the monitoring cluster.

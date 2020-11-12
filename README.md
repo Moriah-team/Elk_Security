@@ -121,6 +121,7 @@ Target Machines & Beats
 We have installed the following Beats on these machines:
 - filebeat
 - metricbeat
+
 These Beats allow us to collect the following information from each machine:
 Filebeat - collects data about the file system such as log events, and ships them to the monitoring cluster.
 

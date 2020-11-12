@@ -128,16 +128,16 @@ A summary of the access policies in place can be found in the table below.
 
  What is the main advantage of automating configuration with Ansible?
 
-Free: Ansible is an open-source tool.
-Very simple to set up and use: No special coding skills are necessary to use Ansible's playbooks (more on playbooks later).
-Powerful: Ansible lets you model even highly complex IT workflows.
+- Free: Ansible is an open-source tool.
+- Very simple to set up and use: No special coding skills are necessary to use Ansible's playbooks (more on playbooks later).
+- Powerful: Ansible lets you model even highly complex IT workflows.
 
 The playbook implements the following tasks: In 3-5 bullets, explain the steps of the ELK installation play. 
-Install docker.io
-Install pip3
-Install Docker python module
-Increase virtual memory
-Download and launch a docker
+- Install docker.io
+- Install pip3
+- Install Docker python module
+- Increase virtual memory
+- Download and launch a docker
 
 
 

@@ -46,12 +46,6 @@ elk-playbook.yml
         published_ports:
           - 5601:5601
           - 9200:9200
-          - 5044:5044
-
-    - name: Enable docker service on restart
-      systemd:
-        name: docker
-        enabled: yes
 
 This document contains the following details:
  Description of the Topology

@@ -1,7 +1,7 @@
  Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
 
-![image](https://user-images.githubusercontent.com/74089519/98960384-3d3eaf00-24b9-11eb-9141-00094d170915.png)
+![image](https://user-images.githubusercontent.com/74089519/99002814-ee613b80-24f1-11eb-803b-0bb87c4a0868.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -119,8 +119,8 @@ Target Machines & Beats
        | Web-3 	    |   	| 10.0.0.7   	|
 
 We have installed the following Beats on these machines:
-- Microbeats
-
+- filebeat
+- metricbeat
 These Beats allow us to collect the following information from each machine:
 Filebeat - collects data about the file system such as log events, and ships them to the monitoring cluster.
 

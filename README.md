@@ -22,9 +22,11 @@ This document contains the following details:
 
  Description of the Topology
       The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+      
 ![image](https://user-images.githubusercontent.com/74089519/98961122-103ecc00-24ba-11eb-8565-de64ae058d62.png)
  
-![image](https://user-images.githubusercontent.com/74089519/98961493-788dad80-24ba-11eb-8acf-3f9056e21102.png)
+![image](https://user-images.githubusercontent.com/74089519/99005622-fd49ed00-24f5-11eb-9964-e3cee8a12deb.png)
+
 
 
 Load balancing ensures that the application will be highly protected, in addition to restricting traffic  to the network.

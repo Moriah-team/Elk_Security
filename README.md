@@ -5,9 +5,12 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-elk-playbook.yml
-
-https://github.com/Moriah-team/Elk_Security/commit/ed6cbc5fa51fad7b5dfd18266062ca9a28304f57
+- Ansible Configuration
+- Ansible ELK Installation and VM Configuration
+- Ansible Filebeat Playbook
+- Ansible Filebeat Config file
+- Ansible Metricbeat Playbook
+- Ansible Metricbeat Config file
 
 This document contains the following details:
  Description of the Topology

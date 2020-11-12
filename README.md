@@ -6,56 +6,14 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 elk-playbook.yml
----
-  - name: Install and configure ELK stack container
-    hosts: elk
-    become: true
-    tasks:
-    - name: install apache httpd  (state=present is optional)
-      apt:
-        name: apache2
-        state: absent
-
-    # Use sysctl module
-    - name: Use sysctl to increase memory on VM
-      sysctl:
-        name: vm.max_map_count
-        value: "262144"
-        state: present
-        reload: yes
-
-    - name: Install docker.io
-      apt:
-        name: docker.io
-        update_cache: yes
-        state: present
-    - name: Install Python3-pip
-      apt:
-        name: python3-pip
-        state: present
-    - name: Install Docker using pip
-      pip:
-        name: docker
-        state: present
-    - name: Install ELK
-      docker_container:
-        name: elk
-        image: sebp/elk:761
-        restart_policy: always
-        state: started
-        published_ports:
-          - 5601:5601
-          - 9200:9200
 
 This document contains the following details:
  Description of the Topology
  Access Policies
  ELK Configuration
-             - Beats in Use
-             - Machines Being Monitored
+  - Beats in Use
+  - Machines Being Monitored
  How to Use the Ansible Build
-
-
 
  Description of the Topology
       The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -129,8 +87,11 @@ A summary of the access policies in place can be found in the table below.
  What is the main advantage of automating configuration with Ansible?
 
 - Free: Ansible is an open-source tool.
-- Very simple to set up and use: No special coding skills are necessary to use Ansible's playbooks (more on playbooks later).
-- Powerful: Ansible lets you model even highly complex IT workflows.
+- Very simple to set up and use: No special coding skills are necessary to use Ansible's playbooks.
+- Powerful: Ansible lets user model even highly complex IT workflows.
+- Flexible: User can orchestrate the entire application environment no matter where it’s deployed. Users can also customize it based on their needs.
+- Agentless: User don’t need to install any other software or firewall ports on the client systems it want to automate. User also don’t have to set up a separate management         structure.
+- Efficient: Because user don’t need to install any extra software, there’s more room for application resources on the server.
 
 The playbook implements the following tasks: In 3-5 bullets, explain the steps of the ELK installation play. 
 - Install docker.io

@@ -70,28 +70,27 @@ Only the Jump box Provisioner machine can accept connections from the Internet. 
 
 - 5061 Kibana port
 
-Machines within the network can only be accessed by Jump Box Provisioner.
-
+Machines within the network can only be accessed by Jump-Box-Provisioner.
 
 Which machine did you allow to access your ELK VM?
-- My IP Address 40.70.206.98
+- Jump-Box-Provisioner
 
-
-Connecting via SSH from the Jump Box VM to the Ansible container.
+What was its IP address?
+- 10.0.0.4 (Jump box Private IP)
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     	| Publicly Accessible | Allowed IP Address 	|
 |----------	|---------------------	|--------------------	|
 | Jump Box 	| Yes                 	| 40.70.206.98       	|
-| Web-1    	| No                  	| 10.0.0.5           	|
-| Web-2    	| No                  	| 10.0.0.6           	|
-| Web-3    	| No                  	| 10.0.0.7           	|
-| ELK-web  	| No                  	| 10.1.0.4           	|
+| Web-1    	| No                  	| 10.0.0.4         	|
+| Web-2    	| No                  	| 10.0.0.4           	|
+| Web-3    	| No                  	| 10.0.0.4           	|
+| ELK-web  	| No                  	| 10.0.0.4           	|
 
  Elk Configuration
 
-     Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it was sealed from vulnerabilities.
+- Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it was sealed from vulnerabilities.
 
  What is the main advantage of automating configuration with Ansible?
 

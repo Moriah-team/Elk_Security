@@ -130,11 +130,14 @@ We have installed the following Beats on these machines:
 - metricbeat
 
 These Beats allow us to collect the following information from each machine:
+
 Filebeat - collects data about the file system such as log events, and ships them to the monitoring cluster.
 
 Metricbeat - collects metrics and statistics and ships them to the output that was specified, such as Elasticsearch or Logstash.
+
 Using the Playbook
-     In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
 - Copy the Playbook  file to Ansible.

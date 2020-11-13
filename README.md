@@ -5,8 +5,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-![image](https://user-images.githubusercontent.com/74089519/99025029-b6bbb900-251c-11eb-9c13-80c76d5c469e.png)
-
+https://github.com/Moriah-team/Elk_Security/blob/main/Ansible/elk-playbook.yml
 
 - Ansible Configuration
 - Ansible ELK Installation and VM Configuration
